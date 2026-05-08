@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  turbopack: {
-    root: __dirname,
-  },
+  // Temporarily disable Turbopack due to SWC helpers issue
+  // turbopack: {
+  //   root: __dirname,
+  // },
 };
 
 export default nextConfig;
