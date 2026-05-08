@@ -17,7 +17,7 @@ export default async function AdminInventory() {
 
   const lowStockProducts = products.filter(product => product.stock < 10)
   const outOfStockProducts = products.filter(product => product.stock === 0)
-  const totalStockValue = products.reduce((sum, product) => sum + (parseFloat(product.price) * product.stock), 0)
+  const totalStockValue = products.reduce((sum, product) => sum + (Number(product.price) * product.stock), 0)
 
   return (
     <div className="p-8 max-w-7xl mx-auto">
