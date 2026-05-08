@@ -152,22 +152,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Payment Methods */}
-        <div className="py-8 border-t border-gray-800">
-          <div className="text-center">
-            <h4 className="text-sm font-semibold text-gray-400 mb-4">We Accept</h4>
-            <div className="flex items-center justify-center space-x-4">
-              <div className="flex items-center space-x-2 text-gray-400 text-sm">
-                <span className="bg-white text-gray-900 px-3 py-1 rounded font-medium">Visa</span>
-                <span className="bg-white text-gray-900 px-3 py-1 rounded font-medium">Mastercard</span>
-                <span className="bg-white text-gray-900 px-3 py-1 rounded font-medium">MTN MoMo</span>
-                <span className="bg-white text-gray-900 px-3 py-1 rounded font-medium">Airtel Money</span>
-                <span className="bg-white text-gray-900 px-3 py-1 rounded font-medium">Cash</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        
         {/* Bottom Footer */}
         <div className="py-6 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">

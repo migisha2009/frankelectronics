@@ -92,17 +92,7 @@ export default function AdminSidebar() {
   return (
     <div className={`bg-gray-900 border-r border-gray-700 text-white transition-all duration-300 ${isCollapsed ? 'w-20' : 'w-64'}`}>
       <div className="flex items-center justify-between p-6 border-b border-gray-700">
-        {!isCollapsed && (
-          <div>
-            <img 
-              src="/frank-electronics-logo.png" 
-              alt="Frank Electronics Logo" 
-              className="h-16 w-auto mb-2"
-            />
-            <p className="text-xs text-white">Electronics Store</p>
-          </div>
-        )}
-        <button
+                <button
           onClick={() => setIsCollapsed(!isCollapsed)}
           className="p-2.5 rounded hover:bg-gray-800 transition-colors"
         >
@@ -128,7 +118,7 @@ export default function AdminSidebar() {
                 </li>
               )
             } else {
-              const isActive = pathname === item.href
+              const isActive = pathname === item.href || (item.href !== "/admin" && pathname.startsWith(item.href))
               return (
                 <li key={item.href}>
                   <Link
